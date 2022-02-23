@@ -1,12 +1,12 @@
 .features {
   @extend %list;
-  display: flex;
+  // display: flex;
 }
 .features__item {
-  max-width: 270px;
-  &:not(:last-child) {
-    margin-right: var(--card-set-gap);
-  }
+  // max-width: 270px;
+  // &:not(:last-child) {
+  //   margin-right: var(--card-set-gap);
+  // }
 }
 
 .features__wrap {

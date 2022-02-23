@@ -310,6 +310,24 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .section {
   padding-top: var(--section-padding-top);
   padding-bottom: var(--section-padding-bottom);
@@ -521,18 +539,6 @@ body {
   background-color: var(--hero-btn-background-color);
   color: var(--hero-btn-texr-color);
   border: transparent;
-}
-
-.features {
-  display: flex;
-}
-
-.features__item {
-  max-width: 270px;
-}
-
-.features__item:not(:last-child) {
-  margin-right: var(--card-set-gap);
 }
 
 .features__wrap {
