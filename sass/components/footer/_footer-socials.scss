@@ -1,0 +1,18 @@
+.footer-subtitle {
+  margin-bottom: 20px;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-socials {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.socials__link--footer {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,27 @@
+.address-container {
+  flex-grow: 1;
+}
+
+.address {
+  margin-top: 20px;
+}
+.address__list {
+  @extend %list;
+}
+
+.address__mail--link,
+.address__tel--link {
+  font-style: normal;
+
+  color: var(--footer-text-color);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__info {
+  font-style: normal;
+
+  color: var(--additional-font-color);
+}

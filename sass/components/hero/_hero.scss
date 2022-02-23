@@ -1,0 +1,27 @@
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  background-color: var(--background-hero-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/студия/herobg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 696px;
+  @include font(900, 44px, 1.36, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--hero-tytle-color);
+}

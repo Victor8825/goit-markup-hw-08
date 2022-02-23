@@ -1,0 +1,14 @@
+.hero__btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  min-width: 200px;
+
+  cursor: pointer;
+  font-family: inherit;
+  @include font(700, 16px, 1.87, 0.06em);
+
+  background-color: var(--hero-btn-background-color);
+  color: var(--hero-btn-texr-color);
+  border: transparent;
+}

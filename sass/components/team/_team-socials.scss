@@ -1,0 +1,8 @@
+.socials__link--team {
+  color: #afb1b8;
+
+  &:hover,
+  &:focus {
+    color: var(--additional-font-color);
+  }
+}

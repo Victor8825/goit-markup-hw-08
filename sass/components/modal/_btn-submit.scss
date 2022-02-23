@@ -1,0 +1,32 @@
+.btn-submit-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-family: var(--main-font);
+  cursor: pointer;
+  @include font(700, 16px, 1.87, 0.06em);
+  color: var(--hero-btn-texr-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  font-style: normal;
+  @include font(null, 14px, 1.7, 0.03em);
+
+  background-color: var(--footer-background-color);
+
+  .footer-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+}

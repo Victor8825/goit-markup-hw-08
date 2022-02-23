@@ -1,0 +1,10 @@
+.logo {
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  @include font(700, 26px, 1.2, 0.03em);
+  color: var(--title-text-color);
+}
+
+.logo__nav {
+  margin-right: 93px;
+}
