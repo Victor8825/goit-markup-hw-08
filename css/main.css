@@ -568,6 +568,10 @@ body {
   }
 }
 
+.features__item {
+  margin-left: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .features__item {
     margin-left: var(--card-set-gap);
@@ -578,6 +582,12 @@ body {
 @media screen and (min-width: 1200px) {
   .features__item {
     width: calc(100% / 4 - 30px);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

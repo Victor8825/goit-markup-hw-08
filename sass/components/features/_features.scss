@@ -9,8 +9,8 @@
 }
 
 .features__item {
-  //   width: calc(100% / 2 -30px);
-  //   margin-left: 30px;
+    // width: calc(100% / 2 -30px);
+    margin-left: -30px;
 
   // max-width: 270px;
   @include tab {
@@ -24,6 +24,13 @@
     width: calc(100% / 4 - 30px);
   }
 }
+
+.features__item:not(:last-child) {
+  @include tel {
+    margin-bottom: 30px;
+  }
+}
+
 
 .features__wrap {
   display: flex;
