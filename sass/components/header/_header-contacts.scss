@@ -1,7 +1,8 @@
 .header-contacts {
   @extend %list;
-  display: flex;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .header-contacts__link {
