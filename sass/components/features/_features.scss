@@ -27,9 +27,7 @@
   
 
 .features__item:not(:last-child) {
-  @include tel {
-    padding-bottom: 30px;
-  }
+  padding-bottom: 30px;
 }
 
 

@@ -8,10 +8,7 @@
   @include tab {
     display: flex;
     flex-wrap: wrap;
-
-    @include desk {
-      margin-left: -30px;
-      }
+    margin-left: -30px;
   }
   
   
