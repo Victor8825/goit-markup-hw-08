@@ -8,3 +8,26 @@
     align-items: center;
   }
 }
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
+}
+
+.menu-close-btn {
+display: block;
+}
+
+.tel-menu {
+position: absolute;
+background-color: var(--background-color); 
+list-style-type: none;
+width: 100vw;
+height: 100vh;
+top: 0;
+left: 0;
+padding-top: 10px;
+padding-bottom: 48px;
+padding-right: 15px;
+padding-left: 40px;
+}
