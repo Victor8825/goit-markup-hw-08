@@ -439,7 +439,7 @@ body {
   align-items: center;
 }
 
-.menu-open-btn {
+.menu-open-btn, .menu-close-btn {
   display: block;
   margin-left: auto;
 }
@@ -451,7 +451,6 @@ body {
 .tel-menu {
   position: absolute;
   background-color: var(--background-color);
-  list-style-type: none;
   width: 100vw;
   height: 100vh;
   top: 0;
