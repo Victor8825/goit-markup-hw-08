@@ -424,7 +424,7 @@ body {
   fill: currentColor;
 }
 
-.socials, .nav-list, .header-contacts, .features, .about, .team, .customers, .filter, .projects, .address__list {
+.socials, .tel-menu-list, .tel-menu-contacts, .tel-menu-socials, .nav-list, .header-contacts, .features, .about, .team, .customers, .filter, .projects, .address__list {
   list-style: none;
 }
 
@@ -444,12 +444,16 @@ body {
   margin-left: auto;
 }
 
+.menu-open-btn:hover, .menu-open-btn:focus, .menu-close-btn:hover, .menu-close-btn:focus {
+  fill: var(--accent-color);
+}
+
 .menu-close-btn {
   display: block;
 }
 
 .tel-menu {
-  position: absolute;
+  position: fixed;
   background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
@@ -459,6 +463,54 @@ body {
   padding-bottom: 48px;
   padding-right: 15px;
   padding-left: 40px;
+}
+
+.tel-menu .tel-menu-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tel-menu-list__item:not(:last-child), .tel-menu-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.tel-menu-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.tel-menu-list__link--current {
+  color: var(--accent-color);
+}
+
+.tel-menu-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.tel-menu-contacts__link--selected {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.tel-menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 .logo {
