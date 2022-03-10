@@ -1,8 +1,11 @@
 .nav-list {
   @extend %list;
   display: none;
-  // display: flex;
-  // align-items: center;
+  @include tab {
+  display: flex;
+  align-items: center;
+  }
+}
 
   .nav-list__link {
     text-decoration: none;
@@ -10,10 +13,11 @@
     @include font(500, 14px, 1.14, 0.02em);
     color: var(--title-text-color);
   }
+  
   .nav-list__item + .nav-list__item {
     margin-left: 50px;
   }
-}
+
 
 .nav {
   display: flex;

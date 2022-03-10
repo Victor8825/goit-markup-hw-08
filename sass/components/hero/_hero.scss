@@ -1,27 +1,53 @@
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
+
 
   background-color: var(--background-hero-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/студия/herobg.jpg);
+    url(../images/студия/herobg480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include tab {
+    width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/студия/herobg768.jpg);
+  }
+
+  @include desk {
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/студия/herobg.jpg);
+  }
 }
+
 .hero__title {
   margin-left: auto;
   margin-right: auto;
 
-  width: 696px;
-  @include font(900, 44px, 1.36, 0.06em);
   text-align: center;
   text-transform: uppercase;
 
   color: var(--hero-tytle-color);
+
+  
+  @include tel {
+    @include font (900, 26px, 1.62, 0.06);
+    width: 360px;
+  }
+
+@include desk {
+  @include font(900, 44px, 1.36, 0.06em);
+  width: 696px;
+}
 }
