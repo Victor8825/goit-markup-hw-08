@@ -2,6 +2,8 @@
   width: 200px;
   height: 50px;
   padding: 10px 28px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +15,8 @@
 
   @include font(700, 16px, 1.87, 0.06em);
   color: var(--hero-btn-texr-color);
+
+  
 }
 
 .subscribe-btn__text {

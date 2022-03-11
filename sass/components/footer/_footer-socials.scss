@@ -9,7 +9,19 @@
 .footer-socials {
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  
+  @include desk {
+    margin-left: 70px;
+  }
+  
 }
 
 .socials__link--footer {
