@@ -830,6 +830,13 @@ body {
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 480px) {
+  .section--team-background {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team {
     display: flex;
@@ -1080,16 +1087,30 @@ body {
   background-color: var(--footer-background-color);
 }
 
-.footer .footer-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media screen and (min-width: 1200px) {
+  .footer .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-socials-wrap {
+    padding-left: 76px;
+    padding-right: 89px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .footer-wrap {
-    flex-direction: row;
-    align-items: baseline;
+  .address-socials-wrap {
+    padding: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1097,22 +1118,37 @@ body {
   color: var(--additional-font-color);
 }
 
-@media screen and (max-width: 767px) {
+.address-container {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
   .address-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .address-container {
-    flex-grow: 1;
+    align-items: baseline;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  flex-grow: 1;
 }
 
 .address {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .address__list {
+    text-align: center;
+  }
 }
 
 .address__mail--link,
@@ -1149,21 +1185,24 @@ body {
 .footer-socials {
   width: 206px;
   height: 80px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-socials {
     margin-left: 70px;
+    align-items: baseline;
   }
 }
 
@@ -1194,7 +1233,7 @@ body {
 }
 
 .subscribe-form__input {
-  width: auto;
+  width: 90vw;
   height: 50px;
   padding: 15px 16px;
   margin-bottom: 20px;
