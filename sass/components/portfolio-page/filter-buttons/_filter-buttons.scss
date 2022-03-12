@@ -1,8 +1,18 @@
 .filter {
   @extend %list;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  
+  @include tab {
+   justify-content: center;
+   margin-bottom: 40px;
+  }
+  
+  @include desk {
+   margin-bottom: 50px;
+  }
+  
 
   & li:not(:last-child) {
     margin-right: 8px;
@@ -18,6 +28,11 @@
   border: transparent;
   padding: 6px 22px;
   min-width: 73px;
+  margin-bottom: 15px;
+
+  @include tab {
+    margin-bottom: 0;
+  }
 
   cursor: pointer;
   font-family: inherit;

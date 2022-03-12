@@ -1,12 +1,25 @@
 .projects {
   @extend %list;
-  // display: flex;
-  // flex-wrap: wrap;
+  @include tab {
+  display: flex;
+  flex-wrap: wrap;
+  }
 }
+
 .project-card {
-  flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  // width: 100%;
+  // height: auto;
+
+  @include tab {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include desk {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  
 }
 .project-card__link {
   display: block;
