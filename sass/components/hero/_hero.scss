@@ -9,14 +9,14 @@
 
   background-color: var(--background-hero-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/студия/herobg480.jpg);
+    url(../images/студия/hero-bg-tel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @include tab {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/студия/herobg768.jpg);
+    url(../images/студия/hero-bg-tab.jpg);
   }
 
   @include desk {
@@ -24,7 +24,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/студия/herobg.jpg);
+    url(../images/студия/hero-bg-desk.jpg);
   }
 }
 
