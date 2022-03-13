@@ -9,14 +9,24 @@
 
   background-color: var(--background-hero-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/студия/hero-bg-tel.jpg);
+    url(../images/студия/tel/hero-bg-tel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/студия/tel/hero-bg-tel-2x.jpg);
+  }
+
   @include tab {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/студия/hero-bg-tab.jpg);
+    url(../images/студия/tab/hero-bg-tab.jpg);
+
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/студия/tab/hero-bg-tab-2x.jpg);
+    }
   }
 
   @include desk {
@@ -24,7 +34,12 @@
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/студия/hero-bg-desk.jpg);
+    url(../images/студия/desk/hero-bg-desk.jpg);
+
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/студия/desk/hero-bg-desk-2x.jpg);
+    }
   }
 }
 
