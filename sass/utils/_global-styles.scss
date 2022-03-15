@@ -47,14 +47,14 @@ body {
 }
 
 .section {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @include tel  {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @include desk { 
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
   }
-  }
+}
 
 
 .section__title {

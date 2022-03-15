@@ -2,33 +2,9 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  gap: 30px;
+  justify-content: center;
 }
-
-.customers__item {
-  margin-left: var(--card-set-gap);
-  width: calc(100% / 2 - 30px);
-
-  @include tab {
-    width: calc(100% / 3 - 30px);  
-  }
-
-  @include desk {
-    width: calc(100% / 6 - 30px);
-  }
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 30px;
-  }
-    
-  }
-
-
-
-
-// .customers__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .customers__link {
   transition-property: border-color, color;
@@ -43,6 +19,7 @@
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  width: 100%;
 
   @include tel {
     width: 210px;
