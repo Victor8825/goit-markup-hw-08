@@ -1020,7 +1020,9 @@ body {
 }
 
 .project-card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-decoration: none;
 }
 
@@ -1082,6 +1084,7 @@ body {
 }
 
 .project-card__content {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
