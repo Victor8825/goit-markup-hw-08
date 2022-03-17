@@ -6,5 +6,8 @@
 }
 
 .logo__nav {
-  margin-right: 93px;
+  @include tab {
+    margin-right: 88px;
+  }
+  
 }

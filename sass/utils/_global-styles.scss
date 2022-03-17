@@ -58,16 +58,16 @@ body {
 
 
 .section__title {
+  margin-bottom: 30px;
+   @include font(700, 28px, 1.17, 0.03em);
+   text-align: center;
+
+   color: var(--title-text-color);
+
+  @include desk {
   margin-bottom: 50px;
-  @include font(700, 36px, 1.17, 0.03em);
-  text-align: center;
-
-  color: var(--title-text-color);
-
-  @include tel {
-    margin-bottom: 30px;
-    @include font(700, 28px, 1.17, 0.03em);
-  }
+    @include font(700, 36px, 1.17, 0.03em);
+    }
 }
 
 .visually-hidden {

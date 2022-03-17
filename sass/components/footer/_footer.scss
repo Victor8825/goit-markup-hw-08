@@ -17,15 +17,14 @@
 }
 
 .address-socials-wrap {
-    @include tab {
-      padding-left: 76px;
-      padding-right: 89px;
       margin-bottom: 60px;
+    @include tab {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: baseline;
     }
     @include desk {
+      flex-grow: 1;
       padding: 0;
       margin-bottom: 0;
     }

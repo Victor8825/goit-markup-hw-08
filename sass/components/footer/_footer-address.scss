@@ -9,6 +9,7 @@
   }
 
   @include desk {
+    flex-grow: 1;
     align-items: baseline;
   }
   }

@@ -36,6 +36,17 @@
   justify-content: space-between;
   }
   }
+
+  .tel-menu-container {
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  .tel-menu-middle {
+    margin-bottom: 64px;
+  }
   
   .tel-menu-list {
     @extend %list;

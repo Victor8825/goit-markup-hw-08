@@ -12,11 +12,11 @@
   
   @include tab {
       // margin-left: var(--card-set-gap);
-      width: calc(100% / 2 - 30px);
+      width: calc((100% - 30px) / 2 );
     }
 
     @include desk {
-      width: calc(100% / 4 - 30px);
+      width: calc((100% - 90px) / 4 );
     }
   }
 
@@ -47,6 +47,10 @@
   text-transform: uppercase;
 
   color: var(--title-text-color);
+
+  @include tel-only {
+    text-align: center;
+  }
 }
 
 .features__text {
